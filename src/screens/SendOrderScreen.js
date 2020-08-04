@@ -73,8 +73,9 @@ const SendOrderScreen = ({navigation}) => {
 	          <View style={styles.dialog}>
 	            <Text style={styles.dialogText}>Seu pedido foi concluido com sucesso!!</Text>
 	            <TouchableOpacity onPress={() => {
-	            	toggleModal();
 	            	navigation.navigate('Index');
+	            	//toggleModal();
+	            	
 	            }}>
 	            	<Text style={styles.okText}>OK</Text>
 	            </TouchableOpacity>
@@ -92,7 +93,7 @@ const SendOrderScreen = ({navigation}) => {
 							sendFirebase();
 							clearCart();
 							toggleModal();
-							//navigation.navigate('Test1');
+						
 
 						}}>
 							<Image style={styles.next} source={require('../../assets/next-carrinho.png')} />

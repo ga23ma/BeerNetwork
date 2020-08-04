@@ -9,7 +9,7 @@ import Images from '../../assets/prod/images';
 
 
 
-const Test2Screen = ({navigation}) => {
+const NalcProductsScreen = ({navigation}) => {
 
 	const { state } = useContext(Context);
 
@@ -51,7 +51,7 @@ const Test2Screen = ({navigation}) => {
 	);		
 };
 
-Test2Screen.navigationOptions = () => {
+NalcProductsScreen.navigationOptions = () => {
 	return {
 		 title:'Outros',
 	};
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default Test2Screen;
+export default NalcProductsScreen;

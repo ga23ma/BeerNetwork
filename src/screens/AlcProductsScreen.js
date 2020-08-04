@@ -9,7 +9,7 @@ import Images from '../../assets/prod/images';
 
 
 
-const TestScreen = ({navigation}) => {
+const AlcProductsScreen = ({navigation}) => {
 	const [next, setNext] = useState(0);
 	const { state ,addProductAl, addProductNal, clearCart } = useContext(Context);
 	
@@ -85,7 +85,7 @@ const TestScreen = ({navigation}) => {
 	);	
 };
 
-TestScreen.navigationOptions = () => {
+AlcProductsScreen.navigationOptions = () => {
 	return {
 		 title:'Brejas',
 	};
@@ -102,4 +102,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default TestScreen;
+export default AlcProductsScreen;

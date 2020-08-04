@@ -24,7 +24,7 @@ const LoginScreen = ({navigation}) => {
 		setisLoading(true);
 		try {
 			await firebase.auth().signInWithEmailAndPassword(title, content);
-			navigation.navigate('Test1');
+			navigation.navigate('AlcProducts');
 		}catch(err){
 			setisLoading(false);
 			setError('Senha ou Usuario Incorreto');

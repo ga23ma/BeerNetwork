@@ -25,8 +25,9 @@ const CartReviewScreen = ({navigation}) => {
 		          <View style={styles.dialog}>
 		            <Text style={styles.dialogText}>Carrinho vazio!</Text>
 		            <TouchableOpacity onPress={() => {
-		            	toggleModal();
-		            	navigation.navigate('Test1');
+		            	navigation.navigate('AlcProducts');
+		            	//toggleModal();
+		            	
 		            }}>
 		            	<Text style={styles.okText}>OK</Text>
 		            </TouchableOpacity>

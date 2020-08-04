@@ -41,7 +41,7 @@ const SignUpScreen = ({navigation}) => {
 				let updates = {};
 				updates['/users/' + await firebase.auth().currentUser.uid] = {email: email, nome: name };
 				await bd_ref.update(updates);
-				navigation.navigate('Test1');
+				navigation.navigate('AlcProducts');
 			} catch (err){
 					setisLoading(false);
 					setError('Dados');

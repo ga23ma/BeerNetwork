@@ -6,8 +6,8 @@ import IndexScreen from './src/screens/IndexScreen';
 import LoadScreen from './src/screens/LoadScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
-import TestScreen from './src/screens/TestScreen';
-import Test2Screen from './src/screens/Test2Screen';
+import AlcProductsScreen from './src/screens/AlcProductsScreen';
+import NalcProductsScreen from './src/screens/NalcProductsScreen';
 import CartReviewScreen from './src/screens/CartReviewScreen';
 import DeliveryPickerScreen from './src/screens/DeliveryPickerScreen';
 import SendOrderScreen from './src/screens/SendOrderScreen';
@@ -35,8 +35,8 @@ indexFlow.navigationOptions = {
 };
 
 const internalFlow = createMaterialTopTabNavigator({
-        Test1: TestScreen,
-        Test2: Test2Screen
+        AlcProducts: AlcProductsScreen,
+        NalcProducts: NalcProductsScreen
       },{
           tabBarOptions: {
             activeTintColor: 'white',
